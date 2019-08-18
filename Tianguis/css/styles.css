@@ -1,0 +1,376 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+      margin: 0;
+      padding: 0;
+      font-family:'News Cycle', sans-serif;
+      background-color: #525050
+  }
+  img{
+  max-width: 100%;
+  
+  }
+  .boton{
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: orangered;
+    padding: .3rem 1.5rem;
+    border-radius:.2rem; 
+    border: none;
+    cursor: pointer;
+  }
+  .contenedor{
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  @media screen and (max-width:768px) {
+    .barra {
+      flex-direction: column;
+    }
+    .navegacion a {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      font-size: 40px;
+      margin-bottom: 1rem;
+     
+    }
+    .btn-formar-parte{
+      width: 60%;
+      text-align: center;
+      padding: 8px 0;
+    }
+    
+  }
+  .site-header{
+    background-image: url(../img/banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+  }
+  .logotipo{
+    height: 300px;
+    
+  }
+  .barra{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+  }
+  .navegacion a{
+    color: white;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: ease-in-out .2s;
+  }
+  .navegacion a:hover{
+    color:#979799;
+    font-size: 1.4rem;
+    
+  }
+  .navegacion a:last-of-type{
+    margin: 0;
+  }
+ .texto-header{
+    color: white;
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+  
+ }
+ .texto-presentacion{
+   text-align: center;
+   color: white;
+   font-size: 1.2rem;
+ }
+ .enlace{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .enlace a{
+  transition: .5s all;
+ }
+ .enlace a:hover{
+   font-size: 1.1rem;
+ }
+ .encabezado-testimoniales{
+  margin: 2.2rem 0;
+  color:white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+}
+ .testimoniales{
+   text-align: center;
+ }
+ .encabezado-testimoniales{
+   display: inline-block;
+  margin: 2.2rem 0;
+  color:white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3rem;
+  border-bottom: 4px solid orangered;
+  padding-bottom: 10px;
+}
+.testimonial{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  transition: .4s all;
+  border-right: 2px solid orangered;
+}
+.testimonial:last-of-type{
+  border: none;
+}
+@media screen and (max-width:768px) {
+  .testimonial {
+    display: inline-block;
+    width: 100%;
+   }
+}
+.nombre{
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.testimonial:hover{
+  background: white;
+  color: black;
+}
+.estrellas{
+  padding: .2rem;
+  font-size: .8rem;
+  color: yellow;
+}
+.logotipo-interno{
+  height: 200px;
+  width: 250px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.wrapper{
+  margin-top: 5%;
+}
+.team{
+  display: flex;
+  text-align: center;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.team .team-member{
+  background: orangered;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 350px;
+  padding: 20px;
+  line-height: 20px;
+  color: white;  
+  position: relative;
+}
+.team .team-member h3{
+  font-size: 26px;
+  margin-top: 50px;
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+}
+.team .team-member p.role{
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 12px 0;
+  
+}
+
+.team-member .team-image img{
+  width: 100px;
+  height: 100px ;
+  border-radius: 50%; 
+  position: absolute;
+  top:-50px; 
+  right: 50%;
+  transform: translateX(50%);
+  border: .3rem solid white;
+}
+.banner-nosotros{
+  background-image: url(../img/bannerNosotros2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+   flex-direction: column;
+}
+.banner-nosotros a{
+  
+  font-family:'News Cycle', sans-serif;
+  padding: .7rem;
+  transition: .5s all;
+}
+.banner-nosotros a:hover{
+  font-size: 1.1rem;
+}
+.services{
+ 
+  text-align: center;
+}
+.services h2{
+  display:  inline-block;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  border-bottom: 4.3px solid orangered;
+  padding-bottom: 10px;
+  margin-top: 35px;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+} 
+.service{
+  display: inline-block;
+  width: calc((100%/3) + 2%);
+  margin: 0 -2px;
+  padding: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: .5s all;
+  color: white;
+  margin: .2rem;
+}
+@media screen and (max-width:768px) {
+  .service {
+    width: 100%;
+  }
+}
+.service:hover{
+  background: white;
+  color: black;
+}
+.service i{
+  color: orangered;
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+}
+.service h3{
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: .2rem;
+}
+.service p{
+  text-align: justify;
+  font-size: 1rem;
+}
+.banner-equipo{
+    background-image: url(../img/banner-equipo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+   flex-direction: column;
+}
+.banner-equipo a{
+  font-family:'News Cycle', sans-serif;
+}
+.borde{
+  height: 4px;
+  width: 4.5rem;
+  background: orangered;
+  display: inline-block;
+  justify-items: center;
+}
+.banner-contacto{
+  background-image: url(../img/banner-contacto.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+   flex-direction: column;
+}
+.contact-form{
+  max-width: 600px;
+  margin:30px auto 30px auto;
+  padding: 0 10px;
+  overflow:hidden;
+  color: white;
+}
+.contact-form-text{
+  display: block;
+  width:100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: none;
+  background: #111;
+  color: white;
+  padding: 28px 28px;
+  outline:none; 
+  transition: .5s;
+}
+.contact-form-text:focus{
+   box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 140px;
+}
+.contact-form-btn{
+  float: right;
+  border: none;
+  transition: .3s all;
+}
+@media screen and (max-width: 768px) {
+  .contact-form-btn{
+    float: unset;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+  }
+}
+.contact-form-btn:hover{
+  background-color: #dd6515;
+}
